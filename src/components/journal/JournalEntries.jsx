@@ -7,7 +7,7 @@ export const JournalEntries = () => {
     <div className='journal__entries'>
       {
         entries.map(entry => (
-          <JournalEntry key={entry.id} />
+          <JournalEntry key={entry} />
         ))
       }
     </div>
