@@ -1,19 +1,28 @@
-import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import { LoginScreen } from '../components/auth/LoginScreen';
 import { RegisterScreen } from '../components/auth/RegisterScreen';
 
 export const AuthRouter = () => {
   return (
+    <div className="auth__main">
+      <div className="auth__box-container">
         <Routes>
           <Route
-            path="/auth/login"
+            path="/login"
             element= {<LoginScreen /> }
           />
 
           <Route
-            path="/auth/register"
-            element= {<RegisterScreen /> } //Investigar redirect para poner en register igua
+            path="/register"
+            element= {<RegisterScreen /> }
+          />
+
+          <Route
+            path="*"
+            element= {<Navigate to='/auth/login' /> }
           />
         </Routes>
+      </div>
+    </div>
   );
 }
