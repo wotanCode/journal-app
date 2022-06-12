@@ -7,3 +7,4 @@
 Librerias importantes utilizadas
 - React 18
 - react-redux": "^8.0.2
+-
