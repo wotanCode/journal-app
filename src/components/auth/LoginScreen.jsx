@@ -1,6 +1,13 @@
 import { Link } from 'react-router-dom';
+import { useForm } from '../../hooks/useForm';
 
 export const LoginScreen = () => {
+
+  const [formValues, handle, reset] = useForm({
+    email: 'pedrito_@gmail.com',
+    password: '123'
+  });
+
   return (
     <>
       <h3 className='auth__title'>Login</h3>
