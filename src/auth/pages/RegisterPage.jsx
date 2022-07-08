@@ -38,7 +38,7 @@ export const RegisterPage = () => {
 
             <Grid item xs={12}>
               <Button variant='contained' fullWidth>
-                Registrar
+                Crear cuenta
               </Button>
             </Grid>
 
