@@ -8,7 +8,11 @@ export const JournalPage = () => {
     <JournalLayout>
       {/* <Typography>Lorem ipsum offimate velit do alique</Typography> */}
 
+
+      {/* Vista con notas */}
       <NoteView />
+
+      {/* Vista sin notas */}
       {/* <NothingSelectedView /> */}
 
       <IconButton
