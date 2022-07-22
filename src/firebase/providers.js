@@ -29,7 +29,7 @@ export const singInWithGoogle = async () => {
 export const registerUserWithEmailAndPassword = async ({ email, password, displayName }) => {
   try {
     const resp = await createUserWithEmailAndPassword(FirebaseAuth, email, password);
-    console.log(resp)
+    // console.log(resp)
     const { uid, photoURL } = resp.user;
 
     // TODO Actualizar al usuario en firebase
@@ -44,7 +44,11 @@ export const registerUserWithEmailAndPassword = async ({ email, password, displa
     }
   }
   catch (error) {
-    console.log(error);
-    return { ok: false, errorMessage: error.message }
+    // console.log(error);
+    return {
+      ok: false,
+      //Aqui van los distintos tipos de errores que puedan venir o distintas validaciones
+      errorMessage: error.message
+    }
   }
 }
