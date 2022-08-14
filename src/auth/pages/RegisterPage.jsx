@@ -41,7 +41,7 @@ export const RegisterPage = () => {
 
   return (
     <AuthLayout title="Crear cuenta">
-      <form onSubmit={onSubmit}>
+      <form onSubmit={onSubmit} className='animate__animated animate__fadeIn animate__faster'>
         <Grid container>
           {/* <h1>FormValid {isFormValid ? 'Valido' : 'No valido'} </h1> */}
 
