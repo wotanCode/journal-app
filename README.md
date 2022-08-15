@@ -1,7 +1,7 @@
 # Journal-App
 Journal app es una aplicación de estilo diario, basado en el curso de Fernando Herrera.
 
-[![portada](./img.png)
+![portada](./img.png)
 
 ## Tecnologias utilizadas
 ```
