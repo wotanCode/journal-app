@@ -66,7 +66,7 @@ export const RegisterPage = () => {
               placeholder='correo@google.com'
               fullWidth
               error={!!emailValid && formSubmitted}
-              helperText={!emailValid && 'El correo debe tener un @'}
+              helperText={emailValid && 'El correo debe tener un @'}
               name="email"
               value={email}
               onChange={onInputChange}
@@ -80,7 +80,7 @@ export const RegisterPage = () => {
               placeholder='Contraseña'
               fullWidth
               error={!!passwordValid && formSubmitted}
-              helperText={!passwordValid && 'La contraseña debe tener al menos 6 caracteres'}
+              helperText={passwordValid && 'La contraseña debe tener al menos 6 caracteres'}
               name="password"
               value={password}
               onChange={onInputChange}
