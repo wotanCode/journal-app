@@ -129,6 +129,8 @@ export const NoteView = () => {
         </Button>
       </Grid>
 
+
+      {/* Image gallery */}
       <ImageGallery images={note.imageUrls} />
 
     </Grid>

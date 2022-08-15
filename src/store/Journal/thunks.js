@@ -3,8 +3,6 @@ import { FirebaseDB } from '../../firebase/config';
 import { addNewEmptyNote, setActiveNote } from './';
 import { deleteNoteById, savingNewNote, setNotes, setPhotosToActiveNote, setSaving, updateNote } from './journalSlice';
 import { fileUpload, loadNotes } from '../../helpers';
-import Swal from 'sweetalert2';
-import 'sweetalert2/dist/sweetalert2.css';
 
 export const startNewNote = () => {
   return async (dispatch, getState) => {
@@ -24,7 +22,7 @@ export const startNewNote = () => {
 
     newNote.id = newDoc.id;
 
-    //dispatch
+    // dispatch
     dispatch(addNewEmptyNote(newNote));
     dispatch(setActiveNote(newNote));
 
@@ -33,6 +31,7 @@ export const startNewNote = () => {
 
 export const startLoadingNotes = () => {
   return async (dispatch, getState) => {
+
     const { uid } = getState().auth;
     if (!uid) throw new Error('El UID del usuario no existe');
 
