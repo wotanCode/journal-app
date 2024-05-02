@@ -6,14 +6,14 @@ import { getFirestore } from 'firebase/firestore/lite';
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
-// Your web app's Firebase configuration
+// Your web app's Firebase configuration example
 const firebaseConfig = {
-  apiKey: "AIzaSyAXQ4dahh0xVIXjFODkllWbvrR5vH1bk2U",
-  authDomain: "react-curso-152f1.firebaseapp.com",
-  projectId: "react-curso-152f1",
-  storageBucket: "react-curso-152f1.appspot.com",
-  messagingSenderId: "205486956485",
-  appId: "1:205486956485:web:290514849e9d11960a35ac"
+  apiKey: "AIzaSyCXZ4dahh0xVIXjFODkllWbvred2uLbk2Z",
+  authDomain: "react-curso-876u8.firebaseapp.com",
+  projectId: "react-curso-543a9",
+  storageBucket: "react-curso-852f0.appspot.com",
+  messagingSenderId: "2054869578965",
+  appId: "1:205412346485:web:2905123449e9d11960a35ac"
 };
 
 // Initialize Firebase
